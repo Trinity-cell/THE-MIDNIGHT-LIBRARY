@@ -1,0 +1,10 @@
+The three things to focus on are the client, server, and database
+the client is the user
+the server is a computer (hosting??)
+the database is where you store data about your website
+nested functions means a function within a function
+
+/ is the home route like a home page.
+we can create other paths by writing a word after the /
+for example /contacts would be what takes the user to the contacts page.
+You can also add a variable to the url by putting it in <>

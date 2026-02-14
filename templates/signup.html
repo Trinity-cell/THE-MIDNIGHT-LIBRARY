@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Entry — The Midnight Library</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:'Georgia', serif;
+            background-color:#0f172a;
+            color:#e5e7eb;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background:#020617;
+            padding:40px;
+            border-radius:12px;
+            width:400px;
+            border:1px solid #1e293b;
+            box-shadow:0 10px 25px rgba(0,0,0,0.6);
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:10px;
+            letter-spacing:1px;
+        }
+
+        p{
+            text-align:center;
+            color:#94a3b8;
+            margin-bottom:30px;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+            font-size:0.9rem;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            border-radius:6px;
+            border:1px solid #1e293b;
+            background:#020617;
+            color:#e5e7eb;
+        }
+
+        input:focus{
+            outline:none;
+            border-color:#38bdf8;
+        }
+
+        button{
+            width:100%;
+            margin-top:25px;
+            padding:14px;
+            border:none;
+            border-radius:8px;
+            background:#38bdf8;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0ea5e9;
+        }
+
+        .back{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .back a{
+            color:#94a3b8;
+            text-decoration:none;
+        }
+
+        .back a:hover{
+            color:#38bdf8;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Request Entry</h1>
+    <p>Only the curious are admitted.</p>
+
+    <form method="POST">
+
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>What draws you to the Midnight Library?</label>
+        <input type="text" name="reason" required>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+
+    <div class="back">
+        <a href="/">Return to the Library</a>
+    </div>
+
+</div>
+
+</body>
+</html>

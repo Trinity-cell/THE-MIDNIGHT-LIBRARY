@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Midnight Library</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:'Georgia', serif;
+            background-color:#0f172a;
+            color:#e5e7eb;
+        }
+
+        header{
+            text-align:center;
+            padding:60px 20px;
+            background:#020617;
+            border-bottom:1px solid #1e293b;
+        }
+
+        h1{
+            letter-spacing:2px;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            color:#94a3b8;
+        }
+
+        .books-section{
+            max-width:900px;
+            margin:60px auto;
+            padding:0 20px;
+        }
+
+        .books-title{
+            text-align:center;
+            margin-bottom:40px;
+            font-size:1.8rem;
+            letter-spacing:1px;
+        }
+
+        .book-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+            gap:25px;
+        }
+
+        .book{
+            background:#020617;
+            padding:25px;
+            border-radius:10px;
+            border:1px solid #1e293b;
+            transition:0.3s;
+            cursor:pointer;
+        }
+
+        .book:hover{
+            transform:translateY(-6px);
+            border-color:#38bdf8;
+        }
+
+        .book-title{
+            font-size:1.1rem;
+            margin-bottom:8px;
+        }
+
+        .book-desc{
+            color:#94a3b8;
+            font-size:0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Midnight Library</h1>
+    <p class="subtitle">Few find their way here. Fewer still belong.</p>
+</header>
+
+<section class="books-section">
+
+    <div class="books-title">
+        Books of the Night
+    </div>
+
+    <div class="book-grid">
+
+        <div class="book">
+            <div class="book-title">The Silence Between Stars</div>
+            <div class="book-desc">On the secrets that only solitude reveals.</div>
+        </div>
+
+        <div class="book">
+            <div class="book-title">Whispers in the Stacks</div>
+            <div class="book-desc">Stories rumored to rearrange themselves.</div>
+        </div>
+
+        <div class="book">
+            <div class="book-title">The Last Lantern</div>
+            <div class="book-desc">A guide for travelers of uncertain roads.</div>
+        </div>
+
+        <div class="book">
+            <div class="book-title">Ink After Dark</div>
+            <div class="book-desc">Forbidden writings recovered at dawn.</div>
+        </div>
+
+        <div class="book">
+            <div class="book-title">A Catalogue of Forgotten Things</div>
+            <div class="book-desc">Memories misplaced by time.</div>
+        </div>
+
+        <div class="book">
+            <div class="book-title">The Librarian’s Oath</div>
+            <div class="book-desc">Some knowledge demands a price.</div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

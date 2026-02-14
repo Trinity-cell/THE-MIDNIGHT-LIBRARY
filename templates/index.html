@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Midnight Library</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: 'Georgia', serif;
+            background-color:#0f172a;
+            color:#e5e7eb;
+        }
+
+        header{
+            position:relative;
+            text-align:center;
+            padding:60px 20px;
+            background:#020617;
+            border-bottom:1px solid #1e293b;
+        }
+
+        /* LOGO */
+        .logo{
+            position:absolute;
+            top:20px;
+            left:20px;
+            height:170px;
+            width: 230px;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin:0;
+            letter-spacing:2px;
+        }
+
+        header p{
+            color:#94a3b8;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        .card{
+            background:#020617;
+            padding:25px;
+            border-radius:10px;
+            margin-bottom:20px;
+            border:1px solid #1e293b;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            border-color:#38bdf8;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#64748b;
+            border-top:1px solid #1e293b;
+        }
+
+        button{
+            background:#38bdf8;
+            border:none;
+            padding:12px 20px;
+            border-radius:6px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        button:hover{
+            background:#0ea5e9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+    <!-- Replace logo.png with your file name -->
+    <img src="{{ url_for('static', filename='logo.png') }}" class="logo" alt="Midnight Library Logo">
+
+
+    <h1>The Midnight Library</h1>
+    <p>Where curious minds wander after the world falls silent.</p>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About Us</h2>
+        <p>
+            Hidden between the seconds of the night lies a library few know how to find.
+            Here we collect dangerous ideas, forgotten philosophies, and stories that refuse to sleep.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Recommended Reads</h2>
+        <ul>
+            <li>The Psychology of Secrets</li>
+            <li>Atomic Habits of Brilliant Minds</li>
+            <li>The Art of Thinking Clearly</li>
+            <li>Letters from a Stoic</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Join the Circle</h2>
+        <p>
+            Membership is free… but curiosity is required.
+        </p>
+        <a href="/join">
+        <button>Request Entry</button>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 The Midnight Library — Open only when you are ready to think.
+</footer>
+
+</body>
+</html>
