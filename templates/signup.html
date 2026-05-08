@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request Entry — The Midnight Library</title>
+    <title>Contact — The Midnight Library</title>
 
     <style>
 
@@ -25,58 +25,41 @@
             width:400px;
             border:1px solid #1e293b;
             box-shadow:0 10px 25px rgba(0,0,0,0.6);
+            text-align:center;
         }
 
         h1{
-            text-align:center;
             margin-bottom:10px;
             letter-spacing:1px;
         }
 
         p{
-            text-align:center;
             color:#94a3b8;
             margin-bottom:30px;
         }
 
-        label{
-            display:block;
-            margin-top:15px;
-            margin-bottom:5px;
-            font-size:0.9rem;
-        }
-
-        input{
-            width:100%;
-            padding:12px;
-            border-radius:6px;
+        .contact-box{
+            background:#0f172a;
             border:1px solid #1e293b;
-            background:#020617;
-            color:#e5e7eb;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:20px;
         }
 
-        input:focus{
-            outline:none;
-            border-color:#38bdf8;
+        .label{
+            color:#38bdf8;
+            font-size:0.9rem;
+            margin-bottom:8px;
+            text-transform:uppercase;
+            letter-spacing:1px;
         }
 
-        button{
-            width:100%;
-            margin-top:25px;
-            padding:14px;
-            border:none;
-            border-radius:8px;
-            background:#38bdf8;
-            font-weight:bold;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#0ea5e9;
+        .info{
+            font-size:1.1rem;
+            word-break:break-word;
         }
 
         .back{
-            text-align:center;
             margin-top:20px;
         }
 
@@ -95,26 +78,22 @@
 
 <div class="container">
 
-    <h1>Request Entry</h1>
-    <p>Only the curious are admitted.</p>
+    <h1>Contact the Library</h1>
 
-    <form method="POST">
+    <p>
+        Entry is not requested lightly.  
+        Reach out only if your curiosity persists after midnight.
+    </p>
 
-        <label>Full Name</label>
-        <input type="text" name="name" required>
+    <div class="contact-box">
+        <div class="label">Email</div>
+        <div class="info">midnightlibrary@email.com</div>
+    </div>
 
-        <label>Email Address</label>
-        <input type="email" name="email" required>
-
-        <label>Password</label>
-        <input type="password" name="password" required>
-
-        <label>What draws you to the Midnight Library?</label>
-        <input type="text" name="reason" required>
-
-        <button type="submit">Submit Request</button>
-
-    </form>
+    <div class="contact-box">
+        <div class="label">Phone</div>
+        <div class="info">+256 741 895 330</div>
+    </div>
 
     <div class="back">
         <a href="/">Return to the Library</a>
